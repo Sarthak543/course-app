@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import { ToastContainer, toast } from "react-toastify"
+import Header from "./Components/Header"
+import { Container, Row, Col } from 'reactstrap';
+import LeftMenu from './Components/leftMenu';
+import Home from './Components/Home'
 
 function App() {
+
+  const btnHandle = () => {
+    toast.error("This is my first message", {
+      position: 'top-center'
+    });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ToastContainer />
+      <Container>
+      <Header></Header>  
+        <Row>
+          <Col md={4}>
+          <LeftMenu/>
+          </Col>
+          <Col md={8}>
+          <Home/>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
