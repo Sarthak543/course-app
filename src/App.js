@@ -4,6 +4,13 @@ import Header from "./Components/Header"
 import { Container, Row, Col } from 'reactstrap';
 import LeftMenu from './Components/leftMenu';
 import Home from './Components/Home'
+import AddCourse from "./Components/addCourse"
+import ViewCourses from "./Components/AllCourses"
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes
+} from "react-router-dom"
 
 function App() {
 
@@ -16,17 +23,23 @@ function App() {
   return (
     <div>
       <ToastContainer />
-      <Container>
-      <Header></Header>  
-        <Row>
-          <Col md={4}>
-          <LeftMenu/>
-          </Col>
-          <Col md={8}>
-          <Home/>
-          </Col>
-        </Row>
-      </Container>
+      <Router>
+        <Container>
+          <Header></Header>
+          <Row>
+            <Col md={4}>
+              <LeftMenu />
+            </Col>
+            <Col md={8}>
+              <Routes>
+                <Route path='/' Component={Home} exact />
+                <Route path='/add-course' Component={AddCourse} exact />
+                <Route path='/view-courses' Component={ViewCourses} exact />
+              </Routes>
+            </Col>
+          </Row>
+        </Container>
+      </Router>
     </div>
   );
 }

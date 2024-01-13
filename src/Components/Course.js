@@ -12,7 +12,7 @@ import {
 
 export default function Course({course}) {
   return (
-    <div>
+    <div className='my-2'>
         <Card className='text-center'>
         <CardBody>
             <CardSubtitle className='fw-bold'>{course.title}</CardSubtitle>
