@@ -1,4 +1,4 @@
-#About
+# About
 
 This project is a web application that allows users to manage courses online.
 It uses React and Reactstrap for the front-end, and Spring Boot for the back-end.
