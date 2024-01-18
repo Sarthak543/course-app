@@ -8,3 +8,7 @@ The application has the following features:
 The project demonstrates the use of modern web technologies, such as RESTful APIs, JSON, Bootstrap, and React Hooks.
 It also follows the best practices of software engineering, such as modular design, code reuse, and testing.
 The project is a showcase of the developer’s skills and creativity in building a user-friendly and functional web application.
+
+# Run
+To run this application you have to install an IDE and tomcat. After that configure tomcat with IDE and then run the courseBackendFolder.
+Now the backend is online you can type 'npm run start' to start the react app. 
