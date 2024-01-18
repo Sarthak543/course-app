@@ -4,7 +4,7 @@ import Header from "./Components/Header"
 import { Container, Row, Col } from 'reactstrap';
 import LeftMenu from './Components/leftMenu';
 import Home from './Components/Home'
-import AddCourse from "./Components/addCourse"
+import AddCourse from "./Components/AddCourse"
 import ViewCourses from "./Components/AllCourses"
 import {
   BrowserRouter as Router,

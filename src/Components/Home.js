@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Button, Container } from "reactstrap"
 
 export default function () {
+
+    useEffect(() => {
+        document.title="Home"
+    }, []);
+
     return (
         <div>
 
